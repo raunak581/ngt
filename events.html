@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        
+    </head>
+    <title>
+        </title>
+        <body>
+            
+            <h1 class="raunak">fade in fade out</h1>
+            <div id="box" style="background-color: red;height: 300px;width: 200px;">
+                <h2>test box</h2>
+
+                
+                </div>
+                
+
+
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script>
+                $(document).ready(function(){
+                    $("#box").click(function(){
+                        $("#box").css('background-color','orange')
+                    });
+
+                    $("#box").dblclick(function(){
+                        $("#box").css('background-color','yellow')
+                    });
+
+
+                    $("body").keypress(function(){
+                        $("body").css('background-color','blue')
+                    });
+
+                    $("body").keyup(function(){
+                        $("body").css('background-color','yellow')
+                    });
+
+
+
+                });
+                
+
+
+
+                
+            </script>
+        </body>
+</html>

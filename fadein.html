@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        
+    </head>
+    <title>
+        </title>
+        <body>
+            
+            <h1 class="raunak">fade in fade out</h1>
+            <div id="box" style="background-color: red;height: 300px;width: 200px;">
+                <h2>test box</h2>
+
+                
+                </div>
+                <button id="fadein">fadein</button>
+                <button id="fadeout">fadeout</button>
+                <button id="fadetoggle">fadetoogle</button>
+                <button id="fadeto">fadeto</button>
+
+
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#fadein').click(function(){
+                        $('#box').fadeIn("fast");
+                    });
+
+                    $('#fadeout').click(function(){
+                        $('#box').fadeOut("fast");
+                    });
+
+                    $('#fadetoggle').click(function(){
+                        $('#box').fadeToggle("slow");
+                    });
+
+
+                    $('#fadeto').click(function(){
+                        $('#box').fadeTo("slow",0.5);
+                    });
+
+
+
+                });
+            </script>
+        </body>
+</html>
