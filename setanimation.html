@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("#button1").click(function () {
+            $("#test1").text("Helloworld");
+        });
+        $("#button2").click(function () {
+            $("#test2").html("<b>hello world</b>");
+        });
+        $("#button3").click(function () {
+            $("#test3").val("dollyduck")
+        });
+    });
+</script>
+
+<body>
+
+    <p id="test1">This is a paragraph</p><br>
+    <p id="test2">This is 2 a paragraph</p><br>
+    <p> <input type="text" id="test3" value="mickeymouse"></p><br>
+
+    <button id="button1">settext</button>
+    <button id="button2">sethtml</button>
+    <button id="button3">setvalue</button>
+    </div>
+</body>
+
+</html>
